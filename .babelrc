@@ -1,0 +1,24 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            ">0.1%",
+            "not ie <9"
+          ]
+        },
+        "modules": false,
+        "loose": true
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-decorators",
+    "transform-object-rest-spread",
+    "external-helpers"
+  ]
+}
