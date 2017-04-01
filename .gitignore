@@ -54,5 +54,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# typescript compile cache
+.typescript-compile-cache/
+
 # rollup build files
 build/

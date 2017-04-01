@@ -1,12 +1,12 @@
-import React, { PureComponent } from 'react'
+import * as React from 'react'
 
-export default class App extends PureComponent {
+export default class App extends React.PureComponent<{}, {}> {
   state = {
     count: 1,
   }
 
   handleButtonClick = () => {
-    this.setState(prevState => ({
+    this.setState((prevState: {count: number}) => ({
       count: prevState.count + 1,
     }))
   }
