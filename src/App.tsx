@@ -1,17 +1,11 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export default class App extends React.PureComponent<{}, {}> {
-  state = {
+  public state = {
     count: 1,
-  }
+  };
 
-  handleButtonClick = () => {
-    this.setState((prevState: {count: number}) => ({
-      count: prevState.count + 1,
-    }))
-  }
-
-  render () {
+  public render() {
     return (
       <div>
         { this.state.count }
@@ -21,6 +15,12 @@ export default class App extends React.PureComponent<{}, {}> {
           add 1
         </button>
       </div>
-    )
+    );
+  }
+
+  private handleButtonClick = () => {
+    this.setState((prevState: {count: number}) => ({
+      count: prevState.count + 1,
+    }));
   }
 }
