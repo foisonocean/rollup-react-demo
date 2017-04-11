@@ -28,13 +28,26 @@ const config = {
     commonjs({
       namedExports: {
         'node_modules/react/react.js': [
+          // Components
           'Component',
           'PureComponent',
-          'PropTypes',
-          'createElement'
+          // Creating React Elements
+          'createElement',
+          'createFactory',
+          // Transforming Elements
+          'cloneElement',
+          'isValidElement',
+          'Children',
+
+          // Prop types
+          'PropTypes'
         ],
         'node_modules/react-dom/index.js': [
-          'render'
+          'render',
+          'findDOMNode',
+          'unmountComponentAtNode',
+          'unstable_batchedUpdates',
+          'unstable_renderSubtreeIntoContainer'
         ],
       }
     }),
